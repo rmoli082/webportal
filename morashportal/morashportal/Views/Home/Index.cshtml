@@ -1,0 +1,45 @@
+﻿@{
+	ViewData["Title"] = "Welcome";
+}
+
+@functions{
+
+	void OnPostTimeCard()
+	{
+		ViewData["Title"] = "TimeCard";
+	}
+}
+
+<div class="text-center">
+	<h1 class="display-4">Your Employee Portal</h1>
+	<p>@DateTime.Now</p>
+</div>
+
+<div class="row text-center">
+	<div class="col-sm-6">
+		<div class="card bg-info text-white mb-3">
+			<div class="card-header">
+				<h5 class="card-title">Time Card</h5>
+			</div>
+			<div class="card-body">
+				<p class="card-text">Access employee time card functions.</p>
+				<form asp-page-handler="TimeCard" method="post">
+					<button class="btn btn-secondary">Time Card</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="card bg-secondary text-light">
+			<div class="card-header">
+				<h5 class="card-title">Task List</h5>
+			</div>
+			<div class="card-body">
+				<p class="card-text">Manage your daily todo list.</p>
+				<a href="#" class="btn btn-primary">Task List</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
