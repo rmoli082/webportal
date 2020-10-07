@@ -9,7 +9,7 @@ namespace TimeCard.API.Infrastructure
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = ; Initial Catalog = TimeCardDb; Persist Security Info = False; User ID = ; Password =; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
+            optionsBuilder.UseSqlServer(@"Server=tcp:morashportal.database.windows.net,1433;Initial Catalog=TimeCardDb;Persist Security Info=False;User ID=rmoli082;Password=Po19830797rn;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
 
     }
