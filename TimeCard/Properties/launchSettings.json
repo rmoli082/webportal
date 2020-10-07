@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:61523",
-      "sslPort": 44380
+      "applicationUrl": "http://localhost:55465/",
+      "sslPort": 44327
     }
   },
   "profiles": {
@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "morashportal": {
+    "TimeCard": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

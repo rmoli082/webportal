@@ -11,8 +11,9 @@
 }
 
 <div class="text-center">
-	<h1 class="display-4">Your Employee Portal</h1>
+	<h1 class="display-3">Your Employee Portal</h1>
 	<p>@DateTime.Now</p>
+	<p>Welcome to morashportal. Your home on the web.</p>
 </div>
 
 <div class="row text-center">
@@ -23,7 +24,7 @@
 			</div>
 			<div class="card-body">
 				<p class="card-text">Access employee time card functions.</p>
-				<form asp-page-handler="TimeCard" method="post">
+				<form asp-controller="Home" asp-action="Timecard">
 					<button class="btn btn-secondary">Time Card</button>
 				</form>
 			</div>
@@ -35,8 +36,8 @@
 				<h5 class="card-title">Task List</h5>
 			</div>
 			<div class="card-body">
-				<p class="card-text">Manage your daily todo list.</p>
-				<a href="#" class="btn btn-primary">Task List</a>
+				<p class="card-text">Manage your daily to-do list.</p>
+				<a class="btn btn-primary" asp-controller="Home" asp-action="TodoList">To Do List</a>
 			</div>
 		</div>
 	</div>

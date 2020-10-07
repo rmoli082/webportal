@@ -23,6 +23,16 @@ namespace morashportal.Controllers
             return View();
         }
 
+        public IActionResult Timecard()
+        {
+            return View();
+        }
+
+        public IActionResult TodoList()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
